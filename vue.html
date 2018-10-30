@@ -24,13 +24,7 @@
 		  <button @click="changeMsg">
 		    Change the Message
 		  </button>
-		  <div class="demo-div" 
-		  @resize="resize"
-		  @move="move"
-		  @resized="resized"
-         	@moved="moved">
-		  	
-		  </div>
+		  <div class="demo-div"></div>
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -45,11 +39,11 @@
 			    msg1: '',
 			    msg2: '',
 			    msg3: '',
-			    a: 1
+			    a: 1,
+			    v: 2
 	        },
 	        created(){
 				this.reszeEventHandler = function(){
-
 				}
 	        },
 	        methods: {
